@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inventory Manager | Yuntamal Irtiqo Ngulya" />
+  <meta name="keywords" content="portfolio, projects, inventory, logistic" />
+  <meta name="author" content="Yuntamal Irtiqo Ngulya" />
+    <meta name="theme-color" content="#007acc" />
+
+  <title>Logistic Consultant | Yuntamal Irtiqo Ngulya</title>
+  <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>My Project Portfolio</h1>
+    <p>Explore some of the projects I've built</p>
+  </header>
+
+  <div class="container">
+    <div class="project fade-in">
+      <h3>Smart Energy Monitoring</h3>
+      <p>A real-time energy monitoring system using ESP32 and IoT dashboards. Allows users to analyze AC power consumption for industrial machines.</p>
+    </div>
+
+    <div class="project fade-in">
+      <h3>Website Linen Supplier</h3>
+      <p>A company profile website for a textile business with interactive product catalog, login/register system, and data tracking through Supabase.</p>
+    </div>
+
+    <div class="project fade-in">
+      <h3>AppSheet Replenishment System</h3>
+      <p>Developed a no-code inventory replenishment system using Google Sheets and AppSheet, tailored for SME warehouse stock optimization.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    // Scroll-based fade-in animation
+    const elements = document.querySelectorAll('.fade-in');
+
+    const onScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      elements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          el.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('load', onScroll);
+  </script>
+</body>
+</html>
